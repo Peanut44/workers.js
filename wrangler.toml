@@ -1,11 +1,7 @@
-name = "myworkerjs"  # Replace with the name of your worker
-type = "javascript"  # Type of worker, 'javascript' is the default
+name = "my-pwa-app"  # This should match the worker's name
+type = "javascript"  # Assuming you're using a JavaScript worker
 
-# Optional: Define environment settings for production or staging
+# Optional production environment configuration
 [env.production]
-route = "*"  # This will make your worker accessible on all routes for workers.dev (no custom domain needed)
-zone_id = ""  # Leave this blank since you're using workers.dev (not a custom domain)
-
-# Optional: Customize build settings if you have specific build steps or tools.
-# [build]
-# command = "npm run build"  # Uncomment and adjust this if you're using build tools
+route = "*"
+zone_id = ""  # Leave empty if you're using workers.dev domain
