@@ -1,0 +1,11 @@
+name = "my-worker"  # Replace with the name of your worker
+type = "javascript"  # Type of worker, 'javascript' is the default
+
+# Optional: Define environment settings for production or staging
+[env.production]
+route = "*"  # This will make your worker accessible on all routes for workers.dev (no custom domain needed)
+zone_id = ""  # Leave this blank since you're using workers.dev (not a custom domain)
+
+# Optional: Customize build settings if you have specific build steps or tools.
+# [build]
+# command = "npm run build"  # Uncomment and adjust this if you're using build tools
