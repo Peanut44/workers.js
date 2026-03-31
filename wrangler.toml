@@ -1,0 +1,8 @@
+name = "myworkerjs"
+type = "javascript"  # O "webpack" kung gumagamit ng bundling tool
+
+[env.production]
+account_id = "ddc767c21911010fe2e30e1d45d8596a"
+workers_dev = true
+route = ""
+zone_id = ""
