@@ -1,7 +1,0 @@
-name = "my-pwa-app"  # This should match the worker's name
-type = "javascript"  # Assuming you're using a JavaScript worker
-
-# Optional production environment configuration
-[env.production]
-route = "*"
-zone_id = ""  # Leave empty if you're using workers.dev domain
